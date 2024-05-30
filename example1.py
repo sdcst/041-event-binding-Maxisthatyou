@@ -18,7 +18,7 @@ l2 = tk.Label(win,text="This button has an event bound by a bind")
 # but the callback for b2 is in a separate command
 b1 =  tk.Button(win,text="Click to play",command="playsound")
 b2 =  tk.Button(win,text="Click to play")
-b2.bind("<Button>",playsound)
+l2.bind("<Button>",playsound)
 
 
 l1.pack()
