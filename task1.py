@@ -3,45 +3,61 @@ import tkinter as tk
 from tkinter import *
 from tkinter import ttk
 
-def baby(event):
+def gega(event):
     print(event)
-    p.playsound("Justin Bieber - Baby ft.Ludacris.mp3")
+    p.playsound("Sound_Effects/Gegagedigedagedago Meme Sound Effect.mp3")
     
 def Superidol(event):
     print(event)
-    p.playsound("Super Idol 的笑容都没你的甜( Meme Sound Effect )( Creator Sound Effect ).mp3")
+    p.playsound("Sound_Effects/Super Idol 的笑容都没你的甜( Meme Sound Effect )( Creator Sound Effect ).mp3")
 
-def headshot(event):
+def fbi(event):
     print(event)
-    p.playsound("headshot_1.mp3")
+    p.playsound("Sound_Effects/FBI Open Up Meme - Sound Effect (HD).mp3")
     
 def scream(event):
     print(event)
-    p.playsound("insane-funny-scream-199845.mp3")
+    p.playsound("Sound_Effects/insane-funny-scream-199845.mp3")
     
-def cat(event):
+def jesus(event):
     print(event)
-    p.playsound("funny-meow-110120.mp3")
+    p.playsound("Sound_Effects/Steven He - I Will Send You To Jesus.mp3")
 
+def headshot(event):
+    print(event)
+    p.playsound("Sound_Effects/headshot_1.mp3")
 
 win = tk.Tk()
 win.attributes('-topmost',True)
-Bieber = PhotoImage(file="Bieber.png")
-cats = PhotoImage(file="cat.png")
-headshots = PhotoImage(file="headshot.png")
-screams = PhotoImage(file="scream.png")
-superidol = PhotoImage(file="Superidol.png")
+gegag = PhotoImage(file="Image/gega.png")
+fbis = PhotoImage(file="Image/fbi.png")
+steven = PhotoImage(file="Image/Steven.png")
+screams = PhotoImage(file="Image/scream.png")
+superidol = PhotoImage(file="Image/Superidol.png")
+headshots = PhotoImage(file="Image/headshot.png")
 
 
 l1 = tk.Label(win,text="Press any image to play a sound")
-l2 = tk.Label(win, image=Bieber )
-l2.bind("<Button>",baby)
-l3 = tk.Label(win, image=Superidol )
-l3.bind("<Button>",)
+l2 = tk.Label(win, image=gegag, width=50)
+l2.bind("<Button>",gega)
+l3 = tk.Label(win, image=fbis, width=50)
+l3.bind("<Button>", fbi)
+l4 = tk.Label(win, image=steven, width=50)
+l4.bind("<Button>", jesus)
+l5 = tk.Label(win, image=screams, width=50)
+l5.bind("<Button>", scream)
+l6 = tk.Label(win, image=superidol, width=50)
+l6.bind("<Button>", Superidol)
+l7 = tk.Label(win, image=headshots, width=50)
+l7.bind("<Button>", headshot)
 
-l1.pack()
-b1.pack()
-l2.pack()
-b2.pack()
+l1.grid(row=1, column=2)
+l2.grid(row=2, column=1)
+l3.grid(row=2, column=2)
+l4.grid(row=2, column=3)
+l5.grid(row=3, column=1)
+l6.grid(row=3, column=2)
+l7.grid(row=3, column=3)
+
 
 win.mainloop()
