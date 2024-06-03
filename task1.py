@@ -1,7 +1,7 @@
-import playsound as p
 import tkinter as tk 
 from tkinter import *
 from tkinter import ttk
+import playsound as p
 
 def gega(event):
     print(event)
@@ -28,36 +28,35 @@ def headshot(event):
     p.playsound("Sound_Effects/headshot_1.mp3")
 
 win = tk.Tk()
-win.attributes('-topmost',True)
-gegag = PhotoImage(file="Image/gega.png")
-fbis = PhotoImage(file="Image/fbi.png")
-steven = PhotoImage(file="Image/Steven.png")
-screams = PhotoImage(file="Image/scream.png")
-superidol = PhotoImage(file="Image/Superidol.png")
-headshots = PhotoImage(file="Image/headshot.png")
 
+fbis=PhotoImage(file="Fbi.png")
+steven=PhotoImage(file="Steven.png")
+screams=PhotoImage(file="scream.png")
+superidol=PhotoImage(file="superidol.png")
+headshots=PhotoImage(file="headshot.png")
+gegas=PhotoImage(file="gega.png")
 
 l1 = tk.Label(win,text="Press any image to play a sound")
-l2 = tk.Label(win, image=gegag, width=50)
+l2 = tk.Label(win, image=gegas)
 l2.bind("<Button>",gega)
-l3 = tk.Label(win, image=fbis, width=50)
+l3 = tk.Label(win, image=fbis)
 l3.bind("<Button>", fbi)
-l4 = tk.Label(win, image=steven, width=50)
+l4 = tk.Label(win, image=steven)
 l4.bind("<Button>", jesus)
-l5 = tk.Label(win, image=screams, width=50)
+l5 = tk.Label(win, image=screams)
 l5.bind("<Button>", scream)
-l6 = tk.Label(win, image=superidol, width=50)
+l6 = tk.Label(win, image=superidol)
 l6.bind("<Button>", Superidol)
-l7 = tk.Label(win, image=headshots, width=50)
+l7 = tk.Label(win, image=headshots)
 l7.bind("<Button>", headshot)
 
-l1.grid(row=1, column=2)
-l2.grid(row=2, column=1)
-l3.grid(row=2, column=2)
-l4.grid(row=2, column=3)
-l5.grid(row=3, column=1)
-l6.grid(row=3, column=2)
-l7.grid(row=3, column=3)
+l1.pack()
+l2.pack()
+l3.pack()
+l4.pack()
+l5.pack()
+l6.pack()
+l7.pack()
 
 
 win.mainloop()
