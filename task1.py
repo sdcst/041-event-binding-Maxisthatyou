@@ -31,7 +31,7 @@ win = tk.Tk()
 win.title()
 
 l1 = tk.Label(win,text="Press any button to play a sound")
-l2 = tk.Button(win, text="gegagedigedagedago", relief=GROOVE, width=20)
+l2 = tk.Button(win, text="gegagedi", relief=GROOVE, width=20)
 l2.bind("<Button>",gega)
 l3 = tk.Button(win, text="FBI Open Up",relief=GROOVE,width=20)
 l3.bind("<Button>", fbi)

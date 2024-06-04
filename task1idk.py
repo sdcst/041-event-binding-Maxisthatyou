@@ -29,7 +29,7 @@ def headshot(event):
 
 win = tk.Tk()
 
-fbis=PhotoImage(file="fbi.png")
+Fbi=PhotoImage(file="fbi.png")
 steven=PhotoImage(file="Steven.png")
 screams=PhotoImage(file="scream.png")
 superidol=PhotoImage(file="Superidol.png")
@@ -41,7 +41,7 @@ gegas=PhotoImage(file="gega.png")
 l1 = tk.Label(win,text="Press any image to play a sound")
 l2 = tk.Label(win, image=gegas)
 l2.bind("<Button>",gega)
-l3 = tk.Label(win, image=fbis)
+l3 = tk.Label(win, image=Fbi)
 l3.bind("<Button>", fbi)
 l4 = tk.Label(win, image=steven)
 l4.bind("<Button>", jesus)
