@@ -13,15 +13,15 @@ def Superidol(event):
 
 def fbi(event):
     print(event)
-    p.playsound("Sound_Effects/FBI Open Up Meme - Sound Effect (HD).mp3")
+    p.playsound("Sound_Effects/fbi.mp3")
     
 def scream(event):
     print(event)
-    p.playsound("Sound_Effects/insane-funny-scream-199845.mp3")
+    p.playsound("Sound_Effects/scream.mp3")
     
 def jesus(event):
     print(event)
-    p.playsound("Sound_Effects/Steven He - I Will Send You To Jesus.mp3")
+    p.playsound("Sound_Effects/Steven.mp3")
 
 def headshot(event):
     print(event)
