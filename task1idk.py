@@ -9,7 +9,7 @@ def gega(event):
     
 def Superidol(event):
     print(event)
-    p.playsound("Sound_Effects/Superidol.mp3")
+    p.playsound("Sound_Effects/Super Idol 的笑容都没你的甜( Meme Sound Effect )( Creator Sound Effect ).mp3")
 
 def fbi(event):
     print(event)
@@ -28,29 +28,37 @@ def headshot(event):
     p.playsound("Sound_Effects/headshot_1.mp3")
 
 win = tk.Tk()
-win.title()
 
-l1 = tk.Label(win,text="Press any button to play a sound")
-l2 = tk.Button(win, text="gegagedigedagedago", relief=GROOVE, width=20)
+fbis=PhotoImage(file="Fbi.png")
+steven=PhotoImage(file="Steven.png")
+screams=PhotoImage(file="scream.png")
+superidol=PhotoImage(file="superidol.png")
+headshots=PhotoImage(file="headshot.png")
+gegas=PhotoImage(file="gega.png")
+
+
+
+l1 = tk.Label(win,text="Press any image to play a sound")
+l2 = tk.Label(win, image=gegas)
 l2.bind("<Button>",gega)
-l3 = tk.Button(win, text="FBI Open Up",relief=GROOVE,width=20)
+l3 = tk.Label(win, image=fbis)
 l3.bind("<Button>", fbi)
-l4 = tk.Button(win, text="Steven He",relief=GROOVE,width=20)
+l4 = tk.Label(win, image=steven)
 l4.bind("<Button>", jesus)
-l5 = tk.Button(win, text="scream",relief=GROOVE,width=20)
+l5 = tk.Label(win, image=screams)
 l5.bind("<Button>", scream)
-l6 = tk.Button(win, text="Superidol",relief=GROOVE,width=20)
+l6 = tk.Label(win, image=superidol)
 l6.bind("<Button>", Superidol)
-l7 = tk.Button(win, text="Headshot",relief=GROOVE,width=20)
+l7 = tk.Label(win, image=headshots)
 l7.bind("<Button>", headshot)
 
-l1.grid(row=1, column=2)
-l2.grid(row=2, column=1)
-l3.grid(row=2, column=2)
-l4.grid(row=2, column=3)
-l5.grid(row=3, column=1)
-l6.grid(row=3, column=2)
-l7.grid(row=3, column=3)
+l1.pack()
+l2.pack()
+l3.pack()
+l4.pack()
+l5.pack()
+l6.pack()
+l7.pack()
 
 
 win.mainloop()
